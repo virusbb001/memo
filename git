@@ -1,0 +1,172 @@
+//リポジトリ
+ github
+ https://github.com/UserName/repo.git
+  jsctags
+   https://github.com/mozilla/doctorjs
+  cloneするときに--recursiveすること
+  サブモジュールcloneのため
+
+  prototype.js
+   https://github.com/sstephenson/prototype.git
+
+  emacs
+   http://git.savannah.gnu.org/r/emacs.git
+
+  three.js
+   https://github.com/mrdoob/three.js
+
+
+リポジトリ          :記憶領域
+コミット,リビジョン :状態の記録
+ワークツリー        :記録の展開場所
+ブランチ            :記録を指すポインタ
+インデックス    
+
+コミットして状態の更新
+チェックアウトで戻る
+並行開発するならフォークする
+フォークを結合するならマージ
+
+コミットの相対指定
+ 対象[相対指定]
+  相対指定:
+   ^ : つけた数だけ戻る
+   ~(num) :numだけ戻る
+
+git init
+でリポジトリ作成
+
+git clone リポジトリ
+でリポジトリ複製
+
+git add ファイル名
+コミットするファイルを指定
+.でカレントディレクトリのファイルを指定
+
+git diff
+差分表示
+
+git status
+状態を表示
+
+git log
+ ログの表示
+
+git fsck
+ リポジトリの正当性を確認
+
+git gc
+ リポジトリの最適化
+
+git branch
+ ブランチの表示
+ *が現在のブランチ
+ -d でブランチの削除
+ -m 元の名前 変更後の名前 でブランチの名前変更
+
+git commit
+ コミット -aですべてのファイルをcommit
+ --amendで直前のコミットをやり直す
+
+git tag タグ名
+ タグをつける
+ 引数なしで一覧
+ -aで注釈をつける
+ -d 対象で削除
+
+git cherry-pick 対象
+ 対象のcommitを今のブランチに持ってくる
+
+git revert 対象
+ 対象コミットの打ち消し
+
+git reset 対象
+ 対象までHEADの位置を持っていく
+ --soft
+  位置のみの変更
+ --mixed (オプション無し)
+  位置とインデックス
+ --hard
+  位置,インデックス,ワークツリー
+
+git push [repository] [refspec]
+リモート先に送信
+-uでブランチを追跡
+この事によってfetch/pullの実行時にrepositoryを省略しても正しく変更結果を反映/取得できる
+
+git pull
+リモート先からダウンロードしてマージ
+
+git fetch
+リモート先からダウンロード
+内容を確認したいだけの時に使う
+FETCH_HEADでチェックアウトできる
+
+git checkout 引数
+その位置まで戻る
+引数にはタグ、ブランチ,ハッシュ値が使える
+ハッシュ値は省略可能
+
+git merge 対象
+今の状態と対象をマージ
+
+git rebase
+ -i 対象
+  対象までのコミットを修正
+
+git rm
+ 削除
+ --cached
+  ファイルを残す
+
+masterは初期状態で作成されるブランチ
+
+リモートリポジトリを作る
+ リポジトリを作りたいところに
+ #hogehoge:リポジトリ名
+ mkdir hogehoge.git
+ cd hogehoge.git
+ git init --bare
+ #--bareは管理情報だけのリポジトリにする
+
+pushした時に衝突が生じた時
+git pullで競合している状態を取得
+メッセージが出てきてその中にファイル名が表示されるから
+それをうまく編集
+
+衝突に関して
+ 基本的には
+  衝突発生
+  v
+  編集
+  v
+  commit
+ branchをマージするときに競合が発生した場合
+  merge:
+   mergeする
+   v
+   メッセージ出てくる
+   v
+   対象ファイルに差分表示
+   編集
+   v
+   commit
+  rebase:
+   rebase 対象
+   v
+   メッセージ出てくる
+   v
+   対象ファイルに差分
+   v
+   修正
+   v
+   add
+   v
+   rebase --continue
+   v
+   checkout 対象
+   v
+   merge 元
+
+ pullした時に競合が発生
+
