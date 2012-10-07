@@ -1,0 +1,11 @@
+サブモジュールの追加
+ git submoduke add URL [dirName]
+
+サブモジュールのステータス表示
+ git submodule status
+
+サブモジュール初期化
+ git submodule init
+
+サブモジュール更新
+ git submodule update
