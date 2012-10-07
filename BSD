@@ -22,3 +22,18 @@ ports検索
 
 portの設定
  make config
+
+portsの構造
+ ports-/-+-Makefile
+         |
+         +-distinfo
+         | ダウンロードすべきファイルとそのsha256値
+         |
+         +-files
+         | パッチ
+         |
+         +-pkg-descr
+         | 詳しい説明文
+         |
+         +-pkg-plist
+          インストールされる全ファイル
