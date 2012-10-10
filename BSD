@@ -23,6 +23,15 @@ ports検索
 portの設定
  make config
 
+インストール
+ make install
+
+削除
+ make deinstall
+
+再インストール
+ make reinstall
+
 portsの構造
  ports-/-+-Makefile
          |
@@ -37,3 +46,4 @@ portsの構造
          |
          +-pkg-plist
           インストールされる全ファイル
+
