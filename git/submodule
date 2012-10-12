@@ -1,5 +1,5 @@
 サブモジュールの追加
- git submoduke add URL [dirName]
+ git submodule add URL [dirName]
 
 サブモジュールのステータス表示
  git submodule status
