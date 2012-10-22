@@ -9,3 +9,8 @@
 
 サブモジュール更新
  git submodule update
+
+サブモジュール削除
+ git config --remove-section submodule.サブモジュール名
+ git config --file .gitmodules --remove-section submodule.サブモジュール名
+ git rm --cached サブモジュール名
