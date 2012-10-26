@@ -1,0 +1,34 @@
+stash:ワークツリーを一時的に保存
+
+保存する
+ git stash [save [コメント]]
+ コメント:ダブルクォーテーションでくくる
+
+一覧表示
+ git stash list
+
+状態を戻す
+ 戻すとき削除する
+  git stash pop [対象]
+ 戻すとき削除しない
+  git stash apply [対象]
+
+ 対象:stash@{n}の形式で指定
+      省略時0になる
+
+削除する
+ git stash drop [対象]
+  対象:上と同じ
+ 全て消す
+  git stash clear
+ 
+stashとその親コミットの差を表示
+ git stash show [対象]
+  対象:上と同じ
+  差分表示:-pオプション付加
+
+stashからbranch作成
+ git stash branch ブランチ名 [対象]
+  対象:上と同じ
+
+
