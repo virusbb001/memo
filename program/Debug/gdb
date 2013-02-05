@@ -1,0 +1,102 @@
+GNUデバッガについて
+
+起動方法
+ コンパイル時にデバッグオプション(-g)をつける
+ gdb 実行ファイル [coreファイル]
+ コアファイル生成方法
+  ulimit -c unlimited
+  実行
+  成功すればcore.*というファイルが出来る
+  gdb実行
+  成功すれば異常終了した場所まで行ってくれる
+
+コマンド
+[省略可能引数] (省略不可引数)
+ run [args]
+  実行
+  args:引数
+ quit
+  終了
+ set args [args]
+  引数指定
+ show args
+  引数表示
+ shell [commands]
+  shellで実行
+  commands:コマンド 省略時shellにいく
+ break (breakpoint) [if文]
+  ブレークポイント指定
+  if文:
+   [if 条件]の形で指定
+  条件が真の時break
+  breakpoint:指定できるもの:
+   関数名
+   行番号
+   現在停止している場所から前後に何行か隔てた場所
+   アドレス
+ info breakpoints [bnum]
+  ブレークポイント表示
+  bnum:番号
+ info watchpoints
+  ウォッチポイント表示
+ delete [bnum]
+  ブレークポイント削除
+  bnum:番号
+ disable (bnum)
+  一時的に無効
+  bnum:番号
+ enable (bnum)
+  有効
+  bnum:番号
+ condition (bnum) 条件
+  bnumに条件を与える
+ ignore (bnum) (num)
+  num回だけbnumを無効
+ commands (bnum)
+  break時にコマンド自動実行
+  endコマンドで終了
+ watch (val)
+  変数valの書込を監視
+  書き込まれた時止まる
+ rwatch (val)
+  変数valの読込を監視
+ awatch (val)
+  変数valの書込と読込を監視
+ continue
+  breakしたところから次の止まるところまで実行
+ step
+  ソースの異なる行に到達するまで実行
+  わかりやすく言えば関数の中に入る
+ next
+  その時のスタックフレーム内でソースの次の行まで実行
+  わかりやすく言えば関数の中に入らない
+ finish
+  その時のスタックフレームがreturnするまで
+  わかりやすく言えば関数が終了するまで
+ until
+  その時の次の行まで
+ list num|[startnum],[endnum]
+  num行を中心に表示
+  startnum行からendnum行まで表示
+ print [式]
+  式を評価して表示
+ display [式]
+  printを自動で実行
+ info display
+  displayについて表示
+ delete display
+  削除
+ whatis val
+  変数valの型を表示
+ ptype val
+  変数valの型を表示
+ set 変数 = 式
+  実行中のプログラムの変数に式の結果を代入
+ backtrace
+  呼び出し元をトレース
+ frame 番号
+  呼び出し元の関数について表示
+ return
+  関数をそれ以降の行を実行せずに終了
+
+
