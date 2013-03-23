@@ -1,0 +1,20 @@
+インターフェース
+ 定数とメソッドの宣言を集めたもの
+ インプリメントされたクラスは宣言されたメソッド,変数を必ず実装しなければならない
+ インターフェースは機能を表す
+ 例として,
+ 哺乳類を継承した犬に、盲導というインターフェースを追加したものが盲導犬
+
+interface interfaceName{
+ type name=value;
+ type method(paramType name...);
+}
+
+class ClassName implements interfaceName{
+}
+
+インターフェースの継承
+ interface Interface extends Interface1,Interface2{
+ }
+
+

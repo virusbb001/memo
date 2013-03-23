@@ -1,0 +1,6 @@
+instanceof
+
+A instanceof B
+A:インスタンス
+B:クラス名orインターフェース名
+AがBのインスタンスであるorBがインプリメントされているかどうか
