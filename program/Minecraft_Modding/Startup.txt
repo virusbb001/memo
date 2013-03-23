@@ -4,3 +4,10 @@
 1.Forgeのソースをダウンロード/展開(展開したところを$FORGEとする)
 2.$FORGEにinstall.pyとかあるだろうからそれを実行
 3.$FORGE/mcp/recompile.shを実行し，エラーが出ないのを確認
+
+serverがリコンパイル出来ないとかは無視していい
+気になる場合は
+ 公式のminecraft_server.jarを落とす
+ $FORGE/mcp/jarsに入れる
+ decompile.shを実行
+ recompile.shを実行

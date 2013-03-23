@@ -1,5 +1,29 @@
 オーバーロード:
     メソッドの複数定義
+
 オーバーライド:
     親クラスのメソッドを子クラスで再定義
     対象の戻り型,インスタンスメソッド名,引数型,引数の数が同じでなければならない
+
+パッケージ
+ クラスやインターフェースをひとまとめにしたもの
+ 階層構造にすることもできる
+ パッケージは以下の手順で作成できる
+  1:Javaファイルに記述
+   //例:
+    //1:
+    package packageName;
+    //2:
+    package packageName.subName;
+  2:ディレクトリに格納
+   1の場合はpackageNameというディレクトリに
+   2の場合はpackageName/subNameに
+ 別パッケージのクラスの指定は(パッケージ名.クラス名)
+
+ パッケージは以下の順番で探索される
+ カレントディレクトリ/パッケージ
+ CLASSPATHで指定されたディレクトリ/パッケージ(先頭が優先される)
+ 標準で用意されているパッケージ
+ 使用するパッケージをimportで宣言しておけばクラスの指定時にパッケージ名を省略できる
+ 例:import packageName.*; //packageName内のクラス全て
+ 例:import packageName.subName.ClassName; //packageName.subName内のClassNameクラス
