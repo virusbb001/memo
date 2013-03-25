@@ -1,0 +1,19 @@
+@Initがついたメソッドにレシピ追加処理をする
+(メソッド名はなんでもいい)
+
+メソッドの詳細はJavaDocで
+
+不定形レシピ
+GameRegistry.addShapelessRecipe
+
+定形レシピ
+GameRegistry.addRecipe
+
+精錬レシピ
+//メタデータを含まない場合
+GameRegistry.addSmelting(int 材料のアイテムID,ItemStack 結果,float 経験値);
+//メタデータを含む場合
+FurnaceRecipes.smelting().addSmelting(上に同じ);
+
+
+

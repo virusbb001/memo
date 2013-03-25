@@ -11,3 +11,10 @@ serverがリコンパイル出来ないとかは無視していい
  $FORGE/mcp/jarsに入れる
  decompile.shを実行
  recompile.shを実行
+
+Eclipseを使うとき
+ ワークスペースに$FORGE/mcp/eclipseと指定する
+
+適当にパッケージを指定する
+
+
