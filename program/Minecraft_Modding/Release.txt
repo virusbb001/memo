@@ -1,0 +1,7 @@
+cd $MCP
+./recompile.sh
+cd reobfuscate.sh
+cp *.png $MCP/reobf/minecraft/package
+cd minecraft
+zip -r ModName-vX.X.X.zip package
+

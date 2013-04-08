@@ -1,0 +1,43 @@
+メインとなるmodの書き方
+
+//アノテーションの詳しい解説は別の所で
+
+以下のClassをインポートする
+
+cpw.mods.fml.common.Mod;
+cpw.mods.fml.common.Mod.Init;
+cpw.mods.fml.common.Mod.Instance;
+cpw.mods.fml.common.Mod.PostInit;
+cpw.mods.fml.common.Mod.PreInit;
+cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.NetworkMod;
+
+他に読み込むべきClassがあればそれもここで読み込む
+
+どこか(importの後?)に以下の宣言をする
+@Mod(modid="Mod固有ID",name="ModName",version="version")
+ modid:ほかのModと被らない固有の文字列
+ name:Modの名前
+ version:バージョン
+
+@NetworkMod(clientSideRequired=bool1,serverSideRequired=bool2);
+ clientSideRequired:クライアントにこのmodが必要か.普通はtrue
+ serverSideRequired:サーバーにこのmodが必要か.普通はfalse
+
+その後にclassを宣言する
+class内に追加するItem,Block,Recipeなどを宣言
+追加の仕方は別のファイル参照
+class内に以下の宣言を
+ @SidedProxy(clientSide="className",serverSide="className")
+  clientSide:クライアント側のインスタンス
+  serverSide:サーバー側のインスタンス
+ @PreInit
+ @Init
+ @PostInit
+
+
+
+

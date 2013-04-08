@@ -1,0 +1,33 @@
+簡易版
+必要なClass
+net.minecraftforge.common.Configuration;
+
+設定ファイル設定
+Configuration config = new Configuration(event.getSuggestedConfigurationFile());
+読込
+config.load();
+保存
+config.save();
+
+ブロックID読み出し
+config.getBlock(NameOfProperty,defaultID).getInt();
+ItemID読み出し
+config.getItem(NameOfProperty,defaultID).getInt();
+
+その他の設定読み出し
+config.get(Category,NameOfProperty,DefaultValue).getBoolean(DefaultValue);
+config.get(Category,NameOfProperty,DefaultValue).getInt();
+
+その他の設定読み出し(String)
+config.getOrCreateProperty(NameOfProperty,Category,DefaultValue).value;
+
+コメント追加
+クラス追加:net.minecraft.src.forge.Property;
+Property someProperty=config.get(Category,NameOfProperty,DefaultValue);
+someProperty.comment="comment";
+//値:
+someProperty.value;
+//Int
+someProperty.getInt();
+//Bllolean
+someProperty.getBoolean(Default);

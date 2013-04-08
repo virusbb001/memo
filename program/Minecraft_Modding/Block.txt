@@ -1,0 +1,44 @@
+ブロックに関して
+(Forge6.6.0)
+
+以下のプロパティを持つ
+BlockID:ブロックID 0-4095
+TextureID:ユーザーに見せるテクスチャ
+BlastResistance:爆発をどの程度軽減するか
+Luminance:ブロックの光度
+Hardness:そのブロックを掘るのにどれだけ時間がかかるか
+CreativeTab:どのクリエイティブタブの属するか
+Sounds:エンティティがブロックの上を歩いた時、どのような音が聞こえるか
+
+ブロックの宣言
+ modのClassでpublic static finalのブロックとして宣言
+ 設定も同時に行う
+ 例:public static final Block ownBlock=new OwnBlock(500).setBlockName("ownBlock");
+
+ @Initでブロックの追加を行う
+ GemeRegistry.registerBlock(ownBlock,"setBlockName");
+  ownBlock:生成したインスタンス
+  setBlockName:内部的なブロックへの名前(ブロック生成時に実行したsetBlockNameの引数と同じ値)
+ LanguageRegistry.addName(Object toName,String readableName);
+  toName:対象となるもの この場合ブロック
+  readableName:名前 人間が読めるもの
+ MinecraftForge.setBlockHarvestLevel(Block block,String toolClass,int tier);
+  block:対象のブロック
+  toolClass:ツールクラス pickaxe,shovel,axe等
+  tier:
+   0:木
+   1:石
+   2:鉄
+   3:ダイアモンド
+
+ コンストラクタ
+ Block (int par1,Material par2Material);
+  par1:ブロックID
+  material:ブロックのMaterial
+ Block (int par1,int par2,Material par2Material);
+  par1:ブロックID
+  par2:テクスチャID
+  material:ブロックのMaterial
+
+onEntityCollidedWithBlock
+Entityとブロックが重なった時に呼ばれるメソッド

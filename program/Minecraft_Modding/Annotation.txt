@@ -1,0 +1,51 @@
+注:パッケージ名は変わる場合があるのでその場合適宜変更すること
+
+@Mod
+ 必要なClass:cpw.mods.fml.common.Mod;
+ @Mod(modid="modid",name="name",version="version")
+ modid:Mod固有のID(文字列)
+ name:Mod名
+ version:Modのバージョン
+ FMLはmodsフォルダ内にあるクラスを走査し、このアノテーションを持つクラスからロードする
+
+@NetworkMod
+ 必要なClass:cpw.mods.fml.common.network.NetworkMod;
+ @NetworkMod(clientSideRequired=bool,clientSideRequired=false)
+ clientSideRequired:クライアントに導入する必要があるかどうか
+ serverSideRequired:サーバーに導入する必要があるかどうか
+
+@SideOnly
+ 必要なClass:cpw.mods.fml.asm.SideOnly;
+ @SideOnly(Side.*);
+ //Side.CLIENT,Side.SERVERが来る
+ //この場合cpw.mods.fml.relauncher.Sideが必要
+ このアノテーションが付けられたメソッドは指定されたものでしか実行されない
+ サーバー側,クライアント側で異なる処理を共通のインターフェースで行う.
+
+@SidedProxy
+ 必要なClass:cpw.fml.common.SidedProxy;
+ @SidedProxy(clientSide="instance",serverSide="instance")
+ clientSide:クライアント側で生成するインスタンス(文字列)
+ serverSide:サーバー側で生成するインスタンス
+ 実行される側によって生成するインスタンスを変更するアノテーション
+
+@Instance
+ 必要なClass:cpw.fml.common.Mod.Instance;
+ @Insrance(modid)
+ public static Class instance;
+ 
+ modid:@Modで宣言したmodidと同じもの
+ Forgeが使うmodのインスタンスの宣言
+
+@PreInit
+ @Initアノテーションがついたメソッドの前に実行される
+
+@Init
+ 初期化
+ ブロックやアイテムの追加
+ WorldGenの登録
+ レシピや共通の設定など
+
+@PostInit
+ 他のModと一緒に動かすために提供されている.
+ たとえば初期のブロックIDを他のmodに使われていないidに変更したりする等
