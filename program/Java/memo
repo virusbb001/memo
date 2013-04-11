@@ -4,3 +4,12 @@ A instanceof B
 A:インスタンス
 B:クラス名orインターフェース名
 AがBのインスタンスであるorBがインプリメントされているかどうか
+
+import static Class.hoge;
+Class.hogeをhogeと使える
+hogeは*でも可
+例:
+ import A.B.Class;
+ import static A.B.Class.PI;
+ //PI:static int
+
