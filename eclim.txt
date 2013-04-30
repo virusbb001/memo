@@ -1,0 +1,45 @@
+## ダウンロード ##
+ [Eclim](http://eclim.org/install.html)
+
+## インストール ##
+ 1.Eclipseを終了する
+ 2.ダウンロードしたeclimを実行
+ 3.ウィザードに従って進む
+
+## TEST ##
+ * GUIによる起動
+  1. Eclipseを起動する
+   1. Eclim起動
+    Window>Show View>Other>Eclim>eclimd
+   2. vimで開く
+    Open With>Vim
+
+ * CUIで起動
+  $ECLIPSE\_HOME/eclimdを実行
+
+ * Vimを起動
+ :PingEclimを実行
+ 成功すればeclim/eclipseのバージョンを表示してくれる
+
+## eclimdの終了 ##
+ * Vimから
+  - :ShutdownEclim
+ * コンソールから
+  - $ECLIPSE\_HOME/eclim -command shutdown
+  - kill *pid*
+
+## アンインストール ##
+* 自動の場合
+ java -jar eclim uninstaller
+* 手動で指定する場合
+ java -Dvim.files=指定した.vim -Declipse.home=指定したecliplse -jar eclim uninstaller
+
+
+# 基本的な使い方
+
+## ヘルプ ##
+ :EclimHelpを実行する
+## 機能を大まかに ##
+ EclimHelp cheatsheet
+
+<!-- vim: set filetype=markdown : -->
