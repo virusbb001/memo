@@ -1,0 +1,41 @@
+BSDの簡単な使い方
+
+## portsの使い方 ##
+  1.`cd /usr/ports`
+  2.目的のポートへ
+  3.`make install clean`
+
+## インストール先 ##
+ `/usr/local`
+ これ以降あるポートをいじる際はそのディレクトリに移動してやること
+
+## ports検索 ##
+
+ 1. [ここ](http://www.freebsd.org/ja/ports/searching.html)から調べる
+2. `cd /usr/ports && make search name=検索`
+
+## 依存するファイルをダウンロードする ##
+` make fetch-recursive `
+
+## portの設定 ##
+` make config `
+
+## インストール ##
+` make install `
+
+## 削除 ##
+` make deinstall `
+
+## 再インストール ##
+ `make reinstall`
+
+## portsの構造 ##
+
+- ports
+  * Makefile
+  * distinfo ダウンロードすべきファイルとそのsha256値
+  * files パッチ
+  * pkg-descr 詳しい説明文
+  * pkg-plist インストールされる全ファイル
+
+<!-- vim:set filetype=markdown : -->
