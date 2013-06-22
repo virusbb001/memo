@@ -177,3 +177,5 @@ git pullで競合している状態を取得
 
  pullした時に競合が発生
 
+設定
+ core.filemode false

@@ -1,9 +1,9 @@
-BSDの簡単な使い方
+# BSDの簡単な使い方 #
 
 ## portsの使い方 ##
-  1.`cd /usr/ports`
-  2.目的のポートへ
-  3.`make install clean`
+  1. `cd /usr/ports`
+  2. 目的のポートへ
+  3. `make install clean`
 
 ## インストール先 ##
  `/usr/local`
@@ -11,8 +11,9 @@ BSDの簡単な使い方
 
 ## ports検索 ##
 
- 1. [ここ](http://www.freebsd.org/ja/ports/searching.html)から調べる
-2. `cd /usr/ports && make search name=検索`
+ * [ここ](http://www.freebsd.org/ja/ports/searching.html)から調べる
+ * `cd /usr/ports && make search name=検索`
+ * `whereis`
 
 ## 依存するファイルをダウンロードする ##
 ` make fetch-recursive `
@@ -37,5 +38,23 @@ BSDの簡単な使い方
   * files パッチ
   * pkg-descr 詳しい説明文
   * pkg-plist インストールされる全ファイル
+ 
+## portのアップグレード方法 ##
+1. `pkg_version -v` で確認
+2. `/usr/ports/UPDATING` で注意書きを確認
+3. portupgrade 
+ - -a で全体を更新 
+ - -i で確認
+ - -R で依存しているすべてのportsを先に更新
+
+## portsのclean ##
+(portupgradeが必要)
+* portsclean -C 作業用のworkディレクトリを削除
+* portsclean -D どのportsからも使われていないdistfilesを削除
+* portsclean -DD システムにインストールされているportから使われていないdistfilesを全て削除
+
+## インストールしたportsの削除 ##
+pkg\_delete package\_name
+
 
 <!-- vim:set filetype=markdown : -->
