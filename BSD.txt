@@ -23,6 +23,8 @@
 
 ## インストール ##
 ` make install `
+作業ディレクトリを変更するなら` make WRKDIRPREFIX=work_dir install`
+インストール先を変更するなら` make PREFIX=install_path install`
 
 ## 削除 ##
 ` make deinstall `
