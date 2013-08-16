@@ -1,8 +1,7 @@
-# Zencoding #
+# Emmet #
 
 ## メモ ##
-基本的にzencoding.vimに関して
-他称emmetの要素があるかも
+基本的にemmet.vimに関して
 
 ## 記法 ##
 
