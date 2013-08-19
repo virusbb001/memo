@@ -1,0 +1,34 @@
+# 基本 #
+## Blob ##
+Webでバイナリデータを扱う場合の重要オブジェクト
+* ブラウザ内に保持されるバイト列も
+* 実際にはディスクに有るファイル上のデータもすべてBlobとして扱える
+### 直接扱えるAPI
+* XMLHttpRequest
+* FormData
+* WebSocket
+
+##強力な点
+* URLを付けられる
+* URLを扱うすべてのAPI,タグの入力に使える
+* A,Image,Script,Video,XHR,Frame,Worker...
+
+
+## File ##
+Blobを継承するサブクラスみたいなもの
+* ディスク上にあるファイルに対応
+
+# FileReaderでファイルを読むとは
+データの流れ的にはネイティブファイル空間からブラウザ内空間に
+API的にはネイティブファイルからFileクラスでブラウザ内空間に
+
+# Blob #
+
+## BlobURLの作り方 ##
+
+```javascript
+var url=window.URL||window.webkitURL;
+var blobUrl=url.createObjectURL(blob);
+```
+
+

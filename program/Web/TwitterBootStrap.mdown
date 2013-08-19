@@ -1,0 +1,15 @@
+# フォームで使えそうなこと #
+
+## form-groupクラス ##
+`label`と`input`などを囲うのに使う
+labelが無くても良さそう
+### 子要素のクラス ###
+
+* label.control-label
+* input.form-control
+
+form-controlは幅のある要素に
+
+## inputの隣にテキストとかを付けたい(Input groups) ##
+
+`div.input-group`で囲い中に`span.input-group-addon{Text}`で付けたい文字,`input.form-control`で`input`要素
