@@ -31,7 +31,7 @@ var url=window.URL||window.webkitURL;
 var blobUrl=url.createObjectURL(blob);
 ```
 
-# イベント #
+# FileReader イベント #
 * loadstart 読込開始時
 * progress 読込進行中 定期的に発声
 * abort 読込中止
