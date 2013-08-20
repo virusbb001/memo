@@ -37,3 +37,11 @@ var blobUrl=url.createObjectURL(blob);
 * abort 読込中止
 * load 読込正常終了
 * error 読込異常終了
+
+## progress ##
+* lengthComputable 全体のサイズがわかっているかどうか
+* loaded 読み込まれたバイト数
+* total 読み込む全体のバイト数
+
+## error ##
+* code エラーコード
