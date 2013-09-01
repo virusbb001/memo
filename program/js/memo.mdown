@@ -3,6 +3,18 @@
 イベントキャプチャリングとイベントバブリングがある
 addEventListenerで第三引数にイベントキャプチャリングならtrue,バブリングならfalseを渡す
 
+## キー操作について ##
+
+### keydown ###
+keyCodeに結果が入る
+
+### keypress ###
+ASCIIならcharCodeに、それ以外ならkeyCodeに
+IMEには反応しない
+
+### 共通点 ###
+押している間呼ばれ続ける
+
 # イベント処理の一連 #
 これをイベントフローという
 
@@ -18,10 +30,11 @@ addEventListenerで第三引数にイベントキャプチャリングならtrue
 
 ## 伝播の制御 ##
 
-|コード|イベントキャンセル|親要素への伝播|
-|`return false`|する|しない
-|`e.preventDefault()`|する|する|
-|`e.stopPropagation()`|しない|する|
+| コード                | イベントキャンセル | 親要素への伝播 |
+| :--                   | :--                | :--            |
+| `return false`        | する               | しない         |
+| `e.preventDefault()`  | する               | する           |
+| `e.stopPropagation()` | しない             | する           |
 
 `preventDefault`はキャンセル可能(`e.cancelable`)な時のみ
 デフォルトのイベント処理を中止する(aのclickだったらリンク先に行かないとか)
