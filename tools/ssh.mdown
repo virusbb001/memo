@@ -1,0 +1,54 @@
+
+# SSHを経由してXアプリを動かしたい
+
+1. サーバー側の`/etc/sshd_config`設定に以下の項目を有効に
+
+```
+X11Forwarding yes
+X11DisplayOffcet <num>
+#ディスプレイ番号 <num>は任意 コメントアウトされているのがあれば#を消すだけ
+```
+
+2. `~/.ssh/config` に`ForwardX11 yes`と設定しておく(クライアント側)
+
+exitで終了できない場合はバックグラウンドで何かが動いている(dbus-launchとか)
+<C-c>で終了させちゃって構わない・・・かも
+
+# ポート番号変更 #
+Debianの場合
+
+1. `netstat -an`で開いてるポートを確認
+2. `/etc/ssh/sshd_config`でPort変更
+3. 再起動
+4. これだけ
+
+# 認証について #
+## パスワード認証 ##
+多分標準で有効
+`PasswordAuthentication`を`yes`に
+
+## 公開鍵認証 ##
+
+### 設定 ###
+1. `PubkeyAuthentication` をyesに
+
+### 鍵作成 ###
+以下の手順を踏む
+1. 鍵を作成するユーザでログイン
+2. ホームディレクトリに移動
+3. `ssh-keygen`を実行(パスフレーズ以外デフォルトで良い)
+5. 作成したディレクトリに移動し、公開鍵(pubと付いているもの)を公開鍵のリストに追加
+ * 名前は設定ファイルの`AuthorizedKeyFile`にて確認できる
+ * コマンド例 `cat id_rsa.pub >> authorized_keys`
+ * 終わったら作成したものは不要
+6. 秘密鍵をクライアントにダウンロードする
+
+## 複数の鍵を管理 ##
+
+1. 以下の項目を個人の設定ファイル`~/.ssh/config`に追加
+* Host ホスト名 任意 これで区切られる
+* HostName 実際に繋げるアドレス
+* User ユーザー名
+* *IdentityFile* 秘密鍵のファイル名
+* Port ポート番号
+
