@@ -2,3 +2,25 @@
  空のファイルを作っておく
  .gitignoreも使われるが.gitkeepを使うのが好ましいと思われる
  (.gitkeep自体は空で意味を持たない)
+
+# gitでホームページ更新 #
+ssh が使える場合のみ
+
+```
+cd gitRep.git
+git init --bare
+cd documentroot/..
+git clone gitRep.git documentroot
+cd documentroot
+vim gitRep.git/hooks/post-update
+```
+
+起動したら以下を追記(post-updateは更新されたら実行する)
+
+```
+#!/bin/sh
+
+(cd documentroot && git --git-dir=.git pull)
+```
+
+
