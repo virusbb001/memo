@@ -1,0 +1,24 @@
+# サブモジュールの追加
+ git submodule add URL [dirName]
+
+# サブモジュールのステータス表示
+ git submodule status
+
+# サブモジュール初期化
+ ` git submodule init `
+gitmodulesに追加し,その時のコミットを追従させる
+
+# サブモジュール更新
+ `git submodule update`
+ `checkout`した時に追従するときにも使う
+
+# サブモジュール削除
+ git config --remove-section submodule.サブモジュール名
+ git config --file .gitmodules --remove-section submodule.サブモジュール名
+ git rm --cached サブモジュール名
+
+# submoduleを最新のものに #
+`git submodule foreach git pull origin master`
+
+# submoduleの変更を無視 #
+`project/.gitmodules`に無視するsubmoduleのところに`ignore = dirty`を追加
