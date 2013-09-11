@@ -3,12 +3,12 @@
 pureperl版がないか探してみる  
 JSONの例でやってみる  
 
-1.[CPANのJSON.pm](http://search.cpan.org/~makamaka/JSON-2.57/lib/JSON.pm)
-2.同じ作者で他に無いか見てみる[MAKAMAKA氏](http://search.cpan.org/~makamaka/)
-3.有りました[JSON::PP JSON::XS compatible pure-Perl module.]("http://search.cpan.org/~makamaka/JSON-PP-2.27202/")
-4.ダウンロード/展開
-5.libを何処かにコピー
-6.読み込んだものを読みこむよう設定
-7.使える やったね！
+1. [CPANのJSON.pm](http://search.cpan.org/~makamaka/JSON-2.57/lib/JSON.pm)
+2. 同じ作者で他に無いか見てみる[MAKAMAKA氏](http://search.cpan.org/~makamaka/)
+3. 有りました[JSON::PP JSON::XS compatible pure-Perl module.]("http://search.cpan.org/~makamaka/JSON-PP-2.27202/")
+4. ダウンロード/展開
+5. libを何処かにコピー
+6. 読み込んだものを読みこむよう設定
+7. 使える やったね！
 
 <!-- vim: set ft=markdown : -->
