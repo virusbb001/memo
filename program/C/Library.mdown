@@ -1,0 +1,31 @@
+# Linux ライブラリの分類
+
+* Staticライブラリ(aファイル)
+* Sharedライブラリ(soファイル)
+    * Dynamic Linking
+      動的リンク
+    * Dynamic Loading
+      動的ローディング
+
+# Mac,Mach-O #
+共有ライブラリのファイルタイプはMH\_DYLIBで,拡張子はdylib 通常の静的リンカフラグ(例えば`libfoo.dylib`は`-lfoo`)でリンクすることができるがモジュールとしてロードは出来ない  
+Dynamic Loadingは`.bundle`が推奨されるけどLinuxから移植されたものは大抵`.so`のまま
+
+# 共有ライブラリ #
+複数のプログラムが共通して利用するライブラリ  
+実行時に動的にリンク(ロード)される
+Winでいうdll,Unixでいうso  
+
+## 作り方 ##
+
+1. ソースを書く
+2. ヘッダファイルを書く
+3. gcc -shared hoge.c -o libhoge.so
+    * ライブラリ名は慣習としてlibなんとか.so.バージョン
+
+## 使い方 ##
+1. gcc -I共有ライブラリのパス -L共有ライブラリのパス main.c -o main -lライブラリ名
+
+# 参考文献 #
+[コンピューター：C言語講座：共有ライブラリについて]( http://www.ncad.co.jp/~komata/c-kouza26.htm )
+[.soや.dylibや.aファイル、共有ライブラリなどについて調べてみた](http://d.hatena.ne.jp/kanonji/20121018/1350538932)

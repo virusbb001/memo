@@ -1,9 +1,0 @@
-# 共有ライブラリ #
-## 作り方 ##
-
-1. ソースを書く
-2. ヘッダファイルを書く
-3. gcc -shared hoge.c -o libhoge.so
-
-## 使い方 ##
-1. gcc -I共有ライブラリのパス -L共有ライブラリのパス main.c -o main -lhoge
