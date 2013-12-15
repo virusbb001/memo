@@ -59,4 +59,7 @@
 pkg\_delete package\_name
 
 
+# VirtualBox #
+Guest Additionsは`emulators/virtualbox-ose-additions`で提供されてるのでそれを使う
+
 <!-- vim:set filetype=markdown : -->
