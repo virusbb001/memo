@@ -1,0 +1,25 @@
+# 文字化け対策 #
+
+## 文字コード指定 ##
+
+以下の方法(KCODE)は廃止された
+* コマンドラインオプションで-K[kcode]を指定する(kcodeはs(ShiftJis)e(euc-jp)u(UTF-8)n(NONE)
+* Shebang(#!)mで上の方法で指定できる
+
+## スクリプトエンコーディング ##
+スクリプトファイルの1行目に書かれた
+
+```ruby
+# coding: euc-jp
+```
+
+とか(1行目がshebangなら2行目でもOK)  
+他にも,
+
+```ruby
+# encoding: euc-jp
+# -*- coding: euc-jp -*-
+# vim:set fileencoding=euc-jp:
+```
+
+でも構わない

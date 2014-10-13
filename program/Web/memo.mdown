@@ -1,0 +1,6 @@
+# scriptタグの書き方 #
+&lt;script src="//example.com"&gt;&lt;script&gt;
+
+外部のファイルを読み込むときにhttpsのページでhttpのデータを読み込もうとすると失敗する
+"http:"などは省略できる
+省略した場合同じプロトコルで読み込まれる

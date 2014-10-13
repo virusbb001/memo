@@ -1,0 +1,22 @@
+# php-envインストール #
+1. まずphp-envをインストールする
+ githubのCHH/phpenv/bin/phpenv-install.shを落として実行する
+2. プラグインとしてphp-buildをインストールする
+ インストールし終わった後phpenv/pluginsでCHH/php-buildをcloneする
+3. マニュアルを読んで、configureのオプションを変える
+ 例えば、apacheのライブラリを作るなら--with-apxsのオプションを追加する =以降にはapxsへのパスを Apache2を使っているのであればwith-apxs2
+4. プラグインgaramon/phpenv-apache-versionをインストールする
+ php-buildと同じ
+
+# phpインストール #
+1. 設定を確認する
+2. `phpenv install VERSION`
+3. `phpenv rehash`
+4. `phpenv versions`で入れたバージョンがあるか確認
+5. `phpenv global version`で入れたバージョンを使う
+6. Apacheのモジュールを切り替えるようにするため
+ モジュールをphpenv/versions/VERSION以下にlibphp5.soを移動する
+
+
+# 使い方 #
+* `php-env install`とすればインストールできるバージョンを出力する

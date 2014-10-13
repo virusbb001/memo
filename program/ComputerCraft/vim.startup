@@ -1,0 +1,181 @@
+
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.013  000.013: --- VIM STARTING ---
+000.133  000.120: Allocated generic buffers
+000.735  000.602: locale set
+000.744  000.009: clipboard setup
+000.753  000.009: window checked
+001.799  001.046: inits 1
+002.017  000.218: parsing arguments
+002.021  000.004: expanding arguments
+006.227  004.206: shell init
+006.600  000.373: Termcap init
+006.623  000.023: inits 2
+006.782  000.159: init highlight
+008.037  000.407  000.407: sourcing /Users/virus/local/share/vim/vim74/syntax/syncolor.vim
+008.206  000.689  000.282: sourcing /Users/virus/local/share/vim/vim74/syntax/synload.vim
+036.871  028.568  028.568: sourcing /Users/virus/local/share/vim/vim74/filetype.vim
+036.992  029.592  000.335: sourcing /Users/virus/local/share/vim/vim74/syntax/syntax.vim
+037.469  000.019  000.019: sourcing /Users/virus/local/share/vim/vim74/filetype.vim
+037.625  000.065  000.065: sourcing /Users/virus/local/share/vim/vim74/ftplugin.vim
+037.775  000.060  000.060: sourcing /Users/virus/local/share/vim/vim74/indent.vim
+037.994  030.831  001.095: sourcing /Users/virus/dotfiles/vimrc
+038.914  000.457  000.457: sourcing /Users/virus/.vim/bundle/neobundle.vim/autoload/neobundle/util.vim
+039.995  001.662  001.205: sourcing /Users/virus/.vim/bundle/neobundle.vim/autoload/neobundle.vim
+041.075  000.654  000.654: sourcing /Users/virus/.vim/bundle/neobundle.vim/autoload/neobundle/config.vim
+043.531  002.351  002.351: sourcing /Users/virus/local/share/vim/vim74/ftoff.vim
+043.768  000.046  000.046: sourcing /Users/virus/local/share/vim/vim74/ftoff.vim
+044.291  000.304  000.304: sourcing /Users/virus/.vim/bundle/neobundle.vim/autoload/neobundle/autoload.vim
+044.880  000.414  000.414: sourcing /Users/virus/.vim/bundle/neobundle.vim/autoload/neobundle/parser.vim
+046.009  000.293  000.293: sourcing /Users/virus/.vim/bundle/neobundle.vim/autoload/neobundle/types/git.vim
+046.352  000.174  000.174: sourcing /Users/virus/.vim/bundle/neobundle.vim/autoload/neobundle/types/hg.vim
+046.621  000.110  000.110: sourcing /Users/virus/.vim/bundle/neobundle.vim/autoload/neobundle/types/nosync.vim
+047.112  000.333  000.333: sourcing /Users/virus/.vim/bundle/neobundle.vim/autoload/neobundle/types/raw.vim
+047.406  000.128  000.128: sourcing /Users/virus/.vim/bundle/neobundle.vim/autoload/neobundle/types/svn.vim
+048.449  000.228  000.228: sourcing /Users/virus/.vim/bundle/neobundle.vim/autoload/neobundle/init.vim
+096.317  000.043  000.043: sourcing /Users/virus/.vim/bundle/eskk.vim/ftdetect/skkdict.vim
+150.438  000.095  000.095: sourcing /Users/virus/.vim/bundle/neobundle.vim/ftdetect/vimrecipe.vim
+150.945  000.136  000.136: sourcing /Users/virus/.vim/bundle/neosnippet/ftdetect/snippet.vim
+152.143  000.344  000.344: sourcing /Users/virus/.vim/bundle/.neobundle/ftdetect/javascript.vim
+152.351  000.126  000.126: sourcing /Users/virus/.vim/bundle/.neobundle/ftdetect/skkdict.vim
+152.654  034.145  033.444: sourcing /Users/virus/local/share/vim/vim74/filetype.vim
+152.826  000.034  000.034: sourcing /Users/virus/local/share/vim/vim74/filetype.vim
+153.371  000.033  000.033: sourcing /Users/virus/local/share/vim/vim74/ftplugin.vim
+153.532  000.033  000.033: sourcing /Users/virus/local/share/vim/vim74/ftplugin.vim
+154.042  000.031  000.031: sourcing /Users/virus/local/share/vim/vim74/indent.vim
+154.191  000.029  000.029: sourcing /Users/virus/local/share/vim/vim74/indent.vim
+154.388  116.204  075.159: sourcing /Users/virus/dotfiles/vim_plugins
+154.876  000.026  000.026: sourcing /Users/virus/local/share/vim/vim74/filetype.vim
+154.972  000.020  000.020: sourcing /Users/virus/local/share/vim/vim74/filetype.vim
+155.314  000.022  000.022: sourcing /Users/virus/local/share/vim/vim74/filetype.vim
+155.407  000.019  000.019: sourcing /Users/virus/local/share/vim/vim74/filetype.vim
+155.793  000.065  000.065: sourcing /Users/virus/local/share/vim/vim74/ftplugin.vim
+155.890  000.019  000.019: sourcing /Users/virus/local/share/vim/vim74/ftplugin.vim
+156.214  000.020  000.020: sourcing /Users/virus/local/share/vim/vim74/indent.vim
+156.344  000.019  000.019: sourcing /Users/virus/local/share/vim/vim74/indent.vim
+156.362  149.348  002.103: sourcing $HOME/.vimrc
+156.374  000.244: sourcing vimrc file(s)
+156.745  000.100  000.100: sourcing /Users/virus/.vim/bundle/neobundle.vim/plugin/neobundle.vim
+3176.540  002.209  002.209: sourcing /Users/virus/.vim/eclim/autoload/eclim/util.vim
+3179.101  005.432  003.223: sourcing /Users/virus/.vim/eclim/autoload/eclim/util.vim
+3181.461  000.962  000.962: sourcing /Users/virus/.vim/eclim/autoload/eclim/common/buffers.vim
+3181.892  3024.154  3017.760: sourcing /Users/virus/.vim/eclim/plugin/eclim.vim
+3182.246  000.233  000.233: sourcing /Users/virus/.vim/eclim/plugin/ftdetect.vim
+3182.871  000.524  000.524: sourcing /Users/virus/.vim/eclim/plugin/ftdetect_jdt.vim
+3183.548  000.580  000.580: sourcing /Users/virus/.vim/eclim/plugin/java_tools.vim
+3185.176  001.534  001.534: sourcing /Users/virus/.vim/eclim/plugin/project.vim
+3185.340  000.061  000.061: sourcing /Users/virus/.vim/eclim/plugin/vimplugin.vim
+3186.817  3029.825  002.739: sourcing /Users/virus/.vim/plugin/eclim.vim
+3187.301  000.419  000.419: sourcing /Users/virus/.vim/plugin/invader.vim
+3188.489  001.086  001.086: sourcing /Users/virus/.vim/plugin/matchit.vim
+3189.010  000.436  000.436: sourcing /Users/virus/.vim/plugin/matrix.vim
+3191.044  000.861  000.861: sourcing /Users/virus/.vim/bundle/unite.vim/autoload/unite/custom.vim
+3191.279  001.492  000.631: sourcing /Users/virus/.vim/bundle/unite.vim/plugin/unite/bookmark.vim
+3191.811  000.449  000.449: sourcing /Users/virus/.vim/bundle/unite.vim/plugin/unite/buffer.vim
+3191.989  000.105  000.105: sourcing /Users/virus/.vim/bundle/unite.vim/plugin/unite/history_yank.vim
+3192.293  000.241  000.241: sourcing /Users/virus/.vim/bundle/unite.vim/plugin/unite/mru.vim
+3192.560  000.196  000.196: sourcing /Users/virus/.vim/bundle/unite.vim/plugin/unite/window.vim
+3193.179  000.554  000.554: sourcing /Users/virus/.vim/bundle/unite.vim/plugin/unite.vim
+3198.469  001.667  001.667: sourcing /Users/virus/.vim/bundle/neobundle.vim/autoload/neobundle/installer.vim
+3200.024  006.564  004.897: sourcing /Users/virus/.vim/bundle/vimfiler/plugin/vimfiler.vim
+3201.313  000.297  000.297: sourcing /Users/virus/.vim/bundle/neocomplcache/plugin/neocomplcache/buffer_complete.vim
+3201.588  000.167  000.167: sourcing /Users/virus/.vim/bundle/neocomplcache/plugin/neocomplcache/dictionary_complete.vim
+3201.858  000.159  000.159: sourcing /Users/virus/.vim/bundle/neocomplcache/plugin/neocomplcache/include_complete.vim
+3202.110  000.149  000.149: sourcing /Users/virus/.vim/bundle/neocomplcache/plugin/neocomplcache/syntax_complete.vim
+3202.394  000.175  000.175: sourcing /Users/virus/.vim/bundle/neocomplcache/plugin/neocomplcache/tags_complete.vim
+3203.946  001.441  001.441: sourcing /Users/virus/.vim/bundle/neocomplcache/plugin/neocomplcache.vim
+3205.027  000.721  000.721: sourcing /Users/virus/.vim/bundle/neosnippet/plugin/neosnippet.vim
+3205.351  000.063  000.063: sourcing /Users/virus/.vim/bundle/matchit.zip/plugin/matchit.vim
+3206.590  001.048  001.048: sourcing /Users/virus/.vim/bundle/vim-surround/plugin/surround.vim
+3208.233  001.422  001.422: sourcing /Users/virus/.vim/bundle/vimshell/plugin/vimshell.vim
+3208.947  000.323  000.323: sourcing /Users/virus/.vim/bundle/vim-quickrun/plugin/quickrun.vim
+3209.636  000.358  000.358: sourcing /Users/virus/.vim/bundle/sudo.vim/plugin/sudo.vim
+3210.301  000.306  000.306: sourcing /Users/virus/.vim/bundle/vimproc/plugin/vimproc.vim
+3210.886  000.352  000.352: sourcing /Users/virus/.vim/bundle/calendar-vim/plugin/calendar.vim
+3212.833  001.702  001.702: sourcing /Users/virus/.vim/bundle/project.tar.gz/plugin/project.vim
+3213.441  000.210  000.210: sourcing /Users/virus/.vim/bundle/vim-ref/plugin/ref.vim
+3215.249  001.590  001.590: sourcing /Users/virus/.vim/bundle/tagbar/plugin/tagbar.vim
+3222.187  006.594  006.594: sourcing /Users/virus/.vim/bundle/vim-fugitive/plugin/fugitive.vim
+3222.563  000.107  000.107: sourcing /Users/virus/.vim/bundle/gist-vim/plugin/gist.vim
+3223.442  000.610  000.610: sourcing /Users/virus/.vim/bundle/vim-multiple-cursors/plugin/multiple_cursors.vim
+3224.731  001.063  001.063: sourcing /Users/virus/.vim/bundle/HJKL/plugin/hjkl.vim
+3225.175  000.149  000.149: sourcing /Users/virus/.vim/bundle/vim-duzzle/plugin/duzzle.vim
+3262.705  037.326  037.326: sourcing /Users/virus/.vim/bundle/sudoku_game/plugin/sudoku_game.vim
+3263.271  000.230  000.230: sourcing /Users/virus/.vim/bundle/vim-scouter/plugin/scouter.vim
+3264.923  000.828  000.828: sourcing /Users/virus/.vim/bundle/vim-textobj-user/autoload/textobj/user.vim
+3285.279  021.699  020.871: sourcing /Users/virus/.vim/bundle/textobj-wiw/plugin/textobj/wiw.vim
+3286.158  000.167  000.167: sourcing /Users/virus/local/share/vim/vim74/plugin/getscriptPlugin.vim
+3286.729  000.505  000.505: sourcing /Users/virus/local/share/vim/vim74/plugin/gzip.vim
+3287.134  000.340  000.340: sourcing /Users/virus/local/share/vim/vim74/plugin/matchparen.vim
+3288.448  001.230  001.230: sourcing /Users/virus/local/share/vim/vim74/plugin/netrwPlugin.vim
+3288.593  000.050  000.050: sourcing /Users/virus/local/share/vim/vim74/plugin/rrhelper.vim
+3288.736  000.070  000.070: sourcing /Users/virus/local/share/vim/vim74/plugin/spellfile.vim
+3289.126  000.318  000.318: sourcing /Users/virus/local/share/vim/vim74/plugin/tarPlugin.vim
+3289.394  000.193  000.193: sourcing /Users/virus/local/share/vim/vim74/plugin/tohtml.vim
+3289.790  000.298  000.298: sourcing /Users/virus/local/share/vim/vim74/plugin/vimballPlugin.vim
+3290.259  000.375  000.375: sourcing /Users/virus/local/share/vim/vim74/plugin/zipPlugin.vim
+3291.002  000.044  000.044: sourcing /Users/virus/local/share/vim/vim74/plugin/getscriptPlugin.vim
+3291.107  000.025  000.025: sourcing /Users/virus/local/share/vim/vim74/plugin/gzip.vim
+3291.208  000.023  000.023: sourcing /Users/virus/local/share/vim/vim74/plugin/matchparen.vim
+3291.318  000.032  000.032: sourcing /Users/virus/local/share/vim/vim74/plugin/netrwPlugin.vim
+3291.420  000.024  000.024: sourcing /Users/virus/local/share/vim/vim74/plugin/rrhelper.vim
+3291.519  000.022  000.022: sourcing /Users/virus/local/share/vim/vim74/plugin/spellfile.vim
+3291.621  000.027  000.027: sourcing /Users/virus/local/share/vim/vim74/plugin/tarPlugin.vim
+3291.796  000.091  000.091: sourcing /Users/virus/local/share/vim/vim74/plugin/tohtml.vim
+3291.908  000.028  000.028: sourcing /Users/virus/local/share/vim/vim74/plugin/vimballPlugin.vim
+3292.015  000.029  000.029: sourcing /Users/virus/local/share/vim/vim74/plugin/zipPlugin.vim
+3292.028  012.035: loading plugins
+3292.044  000.016: inits 3
+3292.545  000.501: reading viminfo
+3292.567  000.022: setting raw mode
+3292.592  000.025: start termcap
+3292.637  000.045: clearing screen
+3317.221  001.121  001.121: sourcing /Users/virus/local/share/vim/vim74/syntax/javascript.vim
+3317.552  000.075  000.075: sourcing /Users/virus/local/share/vim/vim74/syntax/javascript.vim
+3323.520  005.223  005.223: sourcing /Users/virus/local/share/vim/vim74/syntax/vb.vim
+3323.752  000.037  000.037: sourcing /Users/virus/local/share/vim/vim74/syntax/vb.vim
+3331.936  007.673  007.673: sourcing /Users/virus/local/share/vim/vim74/syntax/css.vim
+3332.285  000.077  000.077: sourcing /Users/virus/local/share/vim/vim74/syntax/css.vim
+3332.748  000.073  000.073: sourcing /Users/virus/local/share/vim/vim74/syntax/css.vim
+3332.978  000.523  000.450: sourcing /Users/virus/.vim/eclim/syntax/css.vim
+3335.126  021.233  006.504: sourcing /Users/virus/local/share/vim/vim74/syntax/html.vim
+3338.216  000.816  000.816: sourcing /Users/virus/local/share/vim/vim74/syntax/javascript.vim
+3338.400  000.050  000.050: sourcing /Users/virus/local/share/vim/vim74/syntax/javascript.vim
+3342.286  003.159  003.159: sourcing /Users/virus/local/share/vim/vim74/syntax/vb.vim
+3342.511  000.036  000.036: sourcing /Users/virus/local/share/vim/vim74/syntax/vb.vim
+3348.873  005.851  005.851: sourcing /Users/virus/local/share/vim/vim74/syntax/css.vim
+3349.148  000.072  000.072: sourcing /Users/virus/local/share/vim/vim74/syntax/css.vim
+3349.407  000.042  000.042: sourcing /Users/virus/local/share/vim/vim74/syntax/css.vim
+3349.647  000.386  000.344: sourcing /Users/virus/.vim/eclim/syntax/css.vim
+3352.305  017.039  006.669: sourcing /Users/virus/local/share/vim/vim74/syntax/html.vim
+3356.398  001.220  001.220: sourcing /Users/virus/local/share/vim/vim74/syntax/javascript.vim
+3356.735  000.091  000.091: sourcing /Users/virus/local/share/vim/vim74/syntax/javascript.vim
+3361.843  003.893  003.893: sourcing /Users/virus/local/share/vim/vim74/syntax/vb.vim
+3362.177  000.040  000.040: sourcing /Users/virus/local/share/vim/vim74/syntax/vb.vim
+3369.128  006.403  006.403: sourcing /Users/virus/local/share/vim/vim74/syntax/css.vim
+3369.371  000.048  000.048: sourcing /Users/virus/local/share/vim/vim74/syntax/css.vim
+3369.629  000.043  000.043: sourcing /Users/virus/local/share/vim/vim74/syntax/css.vim
+3369.780  000.304  000.261: sourcing /Users/virus/.vim/eclim/syntax/css.vim
+3372.479  019.843  007.844: sourcing /Users/virus/local/share/vim/vim74/syntax/html.vim
+3373.270  020.788  000.945: sourcing /Users/virus/.vim/eclim/syntax/html.vim
+3374.979  061.809  002.749: sourcing /Users/virus/local/share/vim/vim74/syntax/markdown.vim
+3375.353  000.044  000.044: sourcing /Users/virus/local/share/vim/vim74/syntax/markdown.vim
+3382.057  000.479  000.479: sourcing /Users/virus/local/share/vim/vim74/ftplugin/html.vim
+3382.586  000.023  000.023: sourcing /Users/virus/local/share/vim/vim74/ftplugin/html.vim
+3383.089  000.220  000.220: sourcing /Users/virus/.vim/eclim/ftplugin/html.vim
+3383.288  004.429  003.707: sourcing /Users/virus/local/share/vim/vim74/ftplugin/markdown.vim
+3383.854  000.027  000.027: sourcing /Users/virus/local/share/vim/vim74/ftplugin/markdown.vim
+3389.837  000.657  000.657: sourcing /Users/virus/.vim/eclim/autoload/eclim/display/signs.vim
+3392.070  000.146  000.146: sourcing /Users/virus/.vim/bundle/unite.vim/autoload/unite/sources/buffer/variables.vim
+3392.846  000.262  000.262: sourcing /Users/virus/.vim/bundle/unite.vim/autoload/unite/sources/mru/variables.vim
+3393.333  033.322: opening buffers
+3393.954  000.621: BufEnter autocommands
+3393.958  000.004: editing files in windows
+3395.256  001.298: VimEnter autocommands
+3395.263  000.007: before starting main loop
+3397.578  002.315: first screen update
+3397.584  000.006: --- VIM STARTED ---

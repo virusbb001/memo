@@ -1,0 +1,49 @@
+# What is maven #
+Project Object Modelの考え方に基づいてプロジェクトのビルド、テスト、ドキュメンテーション、成果物の配備などプロジェクトのライフサイクル全体を管理する
+
+# 使い方 #
+
+コマンドは新規作成を除きpom.xmlがあるところで行う
+
+1. プロジェクトを新規作成したいところで`mvn archetype:generate`を実行する
+    コマンド実行時に以下のパラメータを指定することによって予め値を指定できる
+    * `groupId` パッケージ名
+    * `artifactId` プロジェクト名
+2. 編集する
+3. コンパイルする `mvn compile`
+4. ユニットテストする `mvn test`  
+    以下のパターンにマッチするファイルがテストとして実行される
+
+    * \*\*/test\* .java
+    * \*\*/\*Test.java
+    * \*\*/\*TestCase.java
+
+    以下のファイルはデフォルトで除外される
+
+    * \*\*/Abstract\*Test.java
+    * \*\*/Abstract\*TestCase.java
+    * \*\*/\*$\*
+
+5. 必要であればjavadocを作る `mvn javadoc:javadoc`
+6. jarファイルを作成する `mvn package`
+7. 必要ならローカルリポジトリへ `mvn install`
+8. 必要ならリモートリポジトリへ配備する  
+    pom.xmlにリモートリポジトリの情報を記述しておく  
+    `project>distributionManagement>repository>(id{リポジトリの識別子}+name{リポジトリ名}+url{リポジトリのURL})`  
+    `mvn deploy`で配備する
+9. クリーンするには`mvn clean`
+
+生成物はtargetに作成される
+
+# リポジトリ #
+## ローカルリポジトリ ##
+リモートリポジトリから撮ってきたアーカイブ・ファイル置き場  
+Mavenで管理されたアプリケーションのコンパイルや実行はローカルリポジトリにあるファイルを参照/使用する  
+パスは`$HOME/.m2/repository`
+
+# pom.xml #
+プロジェクトに関する情報を持つファイル
+
+# TIPS #
+初めて指定したゴールはオンライン環境でやること
+オフラインで実行する場合`--offline`をつける

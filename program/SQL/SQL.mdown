@@ -1,0 +1,43 @@
+# What is this #
+SQLについて
+
+## 確認済みのデータベース ##
+
+* sqlite
+
+# SQL文法 #
+`;`までが文とされる
+
+# SQLコマンド#
+データベースによる
+
+# コメントアウト
+
+```SQL
+-- comment
+
+/*
+ comment
+ */
+```
+
+
+# テーブル #
+## 作成 ##
+
+```sql
+create table *tableName* ( 
+ columnName1 Datatype,
+ columnname2 Datatype,
+             ...
+ ColumnNameN Datatype
+)
+```
+
+# レコード #
+## 追加 ##
+
+## 削除 ##
+`delete from *tableName* [where 条件式]`
+
+sqliteであればデータ型は省略できる  

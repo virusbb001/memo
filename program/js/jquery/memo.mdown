@@ -1,0 +1,5 @@
+# 継承 #
+
+`$.extend(target[,obj1,obj2...])`でtargetにobj1,obj2...の要素をコピー
+第一引数に`true`が指定されればディープコピー
+引数が一つだけならjQueryに追加

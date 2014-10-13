@@ -1,0 +1,18 @@
+# チャンネル #
+
+通信対象の指定に使われる  
+値:0-65535 整数値  
+モデムごとに128チャンネルを開くことができる  
+Rednetではチャンネル番号に自身のコンピュータIDを, ブロードキャストチャンネル(`rednet.broadcast`,65535)が設定されている  
+GPS API及びgpsプログラムではGPS用チャンネル(`gps.CHANNEL_GPS`,65534)が設定されている  
+
+任意のチャンネル番号を指定して通信する場合はPeripheral APIを用いて, 直接モデムのメソッドを呼びださなければならない.  
+
+# 通信距離 #
+最大通信距離は送信側と受信側の最大通信距離のうちの長い方(例えば, 高高度にあるコンピュータ(384)と低高度にあるコンピュータ(64)なら高高度(384))になる
+
+# 参考 #
+[ Peripheral.mdown ](./peripheral.mdown)
+[ Using Network Cables ](http://www.computercraft.info/forums2/index.php?/topic/11244-151-using-network-cables-for-dummies/)
+[ 非公式Wiki API/Rednet & GPS](http://www50.atwiki.jp/mccc/pages/26.html)
+[ 非公式Wiki API/Peripheral](http://www50.atwiki.jp/mccc/pages/28.html)

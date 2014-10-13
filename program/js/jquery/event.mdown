@@ -1,0 +1,29 @@
+
+# イベントリスナーの設定 #
+
+`on(eventType[,selector][,eventData],handler(eventObject))`
+
+|引数名|意味|
+|:--|:--|
+|eventData | DOMイベントタイプかカスタムイベント名(String)|
+|selector  | ハンドラを実行する要素を示すセレクタ|
+|eventData | イベントハンドラに渡すデータ|
+|handler|イベント発生時に実行する関数|
+|eventObject|イベントオブジェクト|
+
+`on(eventsObject[,selector][,data])`
+
+|引数名|意味|
+|:--|:--|
+|eventsObject|{イベント名:関数,...}といったオブジェクト|
+|selector|セレクタ|
+|data|eventDataに同じ|
+
+selectorを指定すれば新しく出来た要素にも対応できる(ただし子要素のみ)
+documentの子になるように設定すればOK
+
+# イベントオブジェクトについて #
+
+|プロパティ|内容|
+|target|実際にイベントが発生した要素|
+|currentTarget|バブリングによって現在処理している要素 thisと同じ|

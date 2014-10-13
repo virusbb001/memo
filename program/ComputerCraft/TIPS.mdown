@@ -1,0 +1,13 @@
+# RedNet #
+* どの面にモデムが接続されているかわからない時は以下のコードですべてのモデムを開く(あまりいいやり方とは言えない)  
+
+``` lua
+for n,m in ipairs(rs.getSides()) do
+ local flag,state=pcall( rednet.open,m)
+ -- if not flag then
+ --  print("ERROR:".. state)
+ -- end
+
+end -- open all rednet sides
+```
+

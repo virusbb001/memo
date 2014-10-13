@@ -1,0 +1,9 @@
+# 周辺機器 #
+コンピュータにはスニークしながら使用, タートルにはクラフトで付けることができる.  
+Wrapperが無い限り使用は基本的にPeripheral APIを使うものと思われる.  
+`peripheral.getNames`関数で接続されている機器を取得できる.  
+有線でつなぐと周辺機器として使える  
+(コンピュータはID取得と起動,終了再起動くらいしか出来ない)
+
+# 参考 #
+[非公式Wiki API/Peripheral](http://www50.atwiki.jp/mccc/pages/28.html)

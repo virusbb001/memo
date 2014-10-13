@@ -1,19 +1,17 @@
-Makefileの簡単なメモ
+# Makefileの簡単なメモ
 
 <!-- TODO:見やすくする -->
 
-# 基礎知識
+## 基礎知識
 
- a.oを作る
- `gcc -c a.c`
+1. a.oを作る `gcc -c a.c`
+2. a.o,b.oを結合してbinを作る `gcc -o bin a.o b.o`
 
- a.o,b.oを結合してbinを作る
- `gcc -o bin a.o b.o`
-
- 以上の手順を自動化させるためのものがMakefile
+以上の手順を自動化させるためのものがMakefile
 
 # 書き方
- 変数 = 値
+ 変数 = 値 (使用されるたびに再評価)
+ 変数
 
  ターゲット:依存するファイル
  コマンド
