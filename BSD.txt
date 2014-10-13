@@ -42,12 +42,15 @@
   * pkg-plist インストールされる全ファイル
  
 ## portのアップグレード方法 ##
-1. `pkg_version -v` で確認
+1. `pkg version -vl "<"` で確認
 2. `/usr/ports/UPDATING` で注意書きを確認
 3. portupgrade 
  - -a で全体を更新 
  - -i で確認
  - -R で依存しているすべてのportsを先に更新
+
+* バージョンが分かれている場合
+    `portupgrade -o new_version old_version`のあとに`portupgrade -r new_version`
 
 ## portsのclean ##
 (portupgradeが必要)
