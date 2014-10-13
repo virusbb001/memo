@@ -1,6 +1,6 @@
 # 2014 20/13  Linux 勉強会 #
 
-* [イケメン高専生](https://twitter.com/umisama)
+* 講師: [イケメン高専生](https://twitter.com/umisama)
 
 ## OSのメリットとデメリットを調べる
 課題として行う
