@@ -34,10 +34,17 @@ create table *tableName* (
 )
 ```
 
+## 全テーブル表示 ##
+`show tables;`
+
+## フィールド確認 ##
+`desc *tableName*`
+
 # レコード #
 ## 追加 ##
 
 ## 削除 ##
 `delete from *tableName* [where 条件式]`
 
+## 全て出力 ##
 sqliteであればデータ型は省略できる  
