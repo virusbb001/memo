@@ -14,5 +14,5 @@ set password for root = password('パスワード');
 ## 削除 ##
 ` drop database データベース名; `
 
-## 切り替え ##
+## データベース選択/切り替え ##
 `use データベース名;`
