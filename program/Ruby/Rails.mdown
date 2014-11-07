@@ -1,0 +1,17 @@
+# MVC #
+
+* M:Model データベース通信
+* V:View HTML等を返す
+* C: Controller リクエストの処理
+
+# Views
+
+* htmlを返す(テンプレートファイルを使うことが多い)
+* ファイル名: (アクション名).html.\*
+    - アクションからデフォルトで呼び出される
+* アクションからの呼び出し
+    * renderで指定
+    * `app/views/*ControllerName*/*ActionName*.html.\*`のファイル名があればそれを読み出す
+
+<!-- # config/routes.rb -->
+
