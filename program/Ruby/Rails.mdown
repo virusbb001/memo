@@ -11,7 +11,7 @@
     - アクションからデフォルトで呼び出される
 * アクションからの呼び出し
     * renderで指定
-    * `app/views/*ControllerName*/*ActionName*.html.\*`のファイル名があればそれを読み出す
+    * app/views/*ControllerName*/*ActionName*.html.\*のファイル名があればそれを読み出す
 
 <!-- # config/routes.rb -->
 
