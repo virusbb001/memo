@@ -1,22 +1,13 @@
-//リポジトリ
- github
- https://github.com/UserName/repo.git
-  jsctags
-   https://github.com/mozilla/doctorjs
-  cloneするときに--recursiveすること
-  サブモジュールcloneのため
+# リポジトリリスト #
 
-  prototype.js
-   https://github.com/sstephenson/prototype.git
+* github(https://github.com/UserName/repo.git)
+* [jsctags](https://github.com/mozilla/doctorjs)  
+    サブモジュールcloneのため、cloneするときに--recursiveすること
+* [prototype.js](https://github.com/sstephenson/prototype.git)
+* [emacs](http://git.savannah.gnu.org/r/emacs.git)
+* [three.js](https://github.com/mrdoob/three.js)
 
-  emacs
-   http://git.savannah.gnu.org/r/emacs.git
-
-  three.js
-   https://github.com/mrdoob/three.js
-
-
-
+## メモ ##
 コミットして状態の更新
 チェックアウトで戻る
 並行開発するならフォークする
