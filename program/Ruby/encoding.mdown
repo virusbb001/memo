@@ -22,4 +22,7 @@
 # vim:set fileencoding=euc-jp:
 ```
 
-でも構わない
+でも構わない  
+2行目はEmacs,3行目はvim
+
+vim:set fileencoding=utf-8:
