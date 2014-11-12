@@ -1,0 +1,83 @@
+# gem #
+* update:アップデート
+* list:インストールされているもの
+* cleanup:クリーンアップ
+ 
+ update --systemでgemの更新
+ 
+# rvm #
+* list known
+* `get latest`: アップデート
+* `use Version` :そのバージョンのvimを使う  
+    --defaultを使うとそのバージョンを標準として使う
+* `install XXX` : XXXを入れる  
+    変数CCでコンパイラ指定  
+    CPPFLAGSでcppのオプション指定
+
+# スクリプト #
+## 文字列 ##
+* ""でエスケープシーケンスを有効
+* ''で無効
+
+## 変数 ##
+* 命名規則 最初の文字が
+    - 英小文字か\_でローカル変数
+    - @でインスタンス変数
+    - @@でクラス変数
+    - $でグローバル変数
+    - 大文字で定数
+* if文  
+  (elsif,elseは省略できる)
+```ruby
+  if 条件式 then
+   処理
+   処理
+  elsif 条件式 then
+   処理
+  else
+   処理
+  end
+```
+* case文(switchのようなもの)  
+    thenは省略可能
+```ruby
+ case オブジェクト
+  when 値 then
+   処理
+  when 値A,値B then
+   処理
+  else
+   処理
+  end
+```
+
+# 配列 #
+* 宣言/代入  
+```ruby
+  val=[A,B,C,D]
+  val=Array.new([size[,val]])
+```
+* val[N]でN番目の要素
+    - 負数で後ろから
+# for文 #
+```ruby
+  for 変数 in オブジェクトdo
+   処理
+  end
+```
+# クラス #
+```ruby
+  class Name [< SuperClass]
+```
+  Nameには*定数名*を
+## 初期化 ##
+* `initialize`メソッドによって行われる
+# メソッド #
+```ruby
+  def メソッド名
+   処理
+  end
+```
+
+ |hoge|の意味:
+  ブロックの引数である
