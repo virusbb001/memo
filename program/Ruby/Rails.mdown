@@ -13,5 +13,26 @@
     * renderで指定
     * app/views/*ControllerName*/*ActionName*.html.\*のファイル名があればそれを読み出す
 
+# Models
+
+* データベースとのやりとりをするやつ
+* 異なるデータモデルの関連付け
+    - `has_many` : 1つのデータAに対し複数のデータBがあるときにする
+    ```ruby
+    class A < ActiveRecord::Base
+      has_many :bs
+    end
+    ```
+    - `has_many :through` 多対多のモデル
+    ```ruby
+      has_many :models, :through => :中間モデル
+    ```
+    - `belongs_to` : 1対1の関連付けに使う 1つのデータBに対し1つのデータAが有るとする
+    ```ruby
+    class B < ActiveRecord::Base
+      belongs_to :a
+    end
+    ```
+
 <!-- # config/routes.rb -->
 
