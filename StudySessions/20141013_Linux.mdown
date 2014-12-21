@@ -1,6 +1,10 @@
-# 2014 20/13  Linux 勉強会 #
+# 2014 10/13  Linux 勉強会 #
 
+* 場所: オフィス木更津
 * 講師: [イケメン高専生](https://twitter.com/umisama)
+* 参考URL
+	- 高専ベンチャーのブログ: http://www.kosen-venture.com/news/95
+	- 勉強会資料: https://docs.google.com/presentation/d/1cyxJVTtv7ZsYQwnjW0ZJHbgXRZZi3aDiU8OS0HJWp_g/edit#slide=id.p
 
 ## OSのメリットとデメリットを調べる
 課題として行う
